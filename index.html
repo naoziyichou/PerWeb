@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>陈阳 · 探索记录</title>
+<meta name="description" content="动画与互动媒体背景，AI 工具链探索者。不擅长建模和代码，但擅长用 AI Agent 把想法变成可交互原型。">
+<link rel="stylesheet" href="site/assets/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ============================ 左侧：结构总览（目录） ============================ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="side-head">
+      <a class="brand" href="#/home">
+        <span class="brand-mark" id="brandMark">阳</span>
+        <span id="brandName">陈阳</span>
+      </a>
+      <div class="brand-sub" id="brandSub">动画与互动媒体 · AI 工具链探索者</div>
+    </div>
+
+    <nav class="side-scroll" id="sideNav"><!-- app.js 生成 --></nav>
+
+    <div class="side-foot">
+      <span class="who" id="sideWho">陈阳</span>
+      <a href="#/contact">联系</a>
+    </div>
+  </aside>
+
+  <div class="scrim" id="scrim"></div>
+
+  <!-- ================================= 中间：正文 ================================= -->
+  <main class="main">
+    <div class="main-bar">
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="打开目录">☰</button>
+      <div class="crumb" id="crumbs"></div>
+      <div class="bar-actions">
+        <button class="chip" id="printBtn" type="button" onclick="window.print()">打印 / 存 PDF</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <article class="view" id="view"><!-- app.js 生成 --></article>
+    </div>
+  </main>
+
+  <!-- ============================ 右侧：当前页面小目录 ============================ -->
+  <aside class="toc">
+    <div class="toc-title">本页目录</div>
+    <div id="tocBody"></div>
+  </aside>
+
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script src="site/assets/uikit.js"></script>
+<script src="site/content/site-pages.js"></script>
+<script src="site/content/projects.js"></script>
+<script src="site/assets/app.js"></script>
+</body>
+</html>

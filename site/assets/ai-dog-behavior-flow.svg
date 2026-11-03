@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="900" viewBox="0 0 1680 900" role="img" aria-labelledby="title desc">
+  <title id="title">AI 狗行为流程草图</title>
+  <desc id="desc">环境感知与状态记忆共同输入 AI 的行为选择；游戏执行动作，互动结果更新关系记忆，并影响下一次相遇。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#35473e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .font { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #26362e; }
+      .title { font-size: 48px; font-weight: 750; }
+      .subtitle { font-size: 24px; fill: #54675c; }
+      .section { font-size: 20px; letter-spacing: 2px; font-weight: 700; fill: #5f7267; }
+      .heading { font-size: 31px; font-weight: 750; }
+      .body { font-size: 23px; fill: #37483e; }
+      .small { font-size: 21px; fill: #53645a; }
+      .badge { font-size: 23px; font-weight: 750; fill: white; }
+      .line { fill: none; stroke: #35473e; stroke-width: 3.6; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1680" height="900" fill="#f8f6ee"/>
+  <path d="M0 0H1680V18H0Z" fill="#5c7866"/>
+  <text class="font title" x="72" y="91">AI 狗如何决定下一步？</text>
+  <text class="font subtitle" x="74" y="132">村落里的其他狗由 AI 控制 · 以池塘边的一次相遇为例</text>
+
+  <text class="font section" x="74" y="184">两类输入</text>
+  <text class="font section" x="635" y="294">行为决策</text>
+  <text class="font section" x="1174" y="184">玩家能看到的结果</text>
+
+  <rect x="70" y="207" width="430" height="230" rx="25" fill="#d9e9e1" stroke="#a8c4b5" stroke-width="2"/>
+  <circle cx="112" cy="251" r="23" fill="#648c7b"/>
+  <text class="font badge" x="112" y="259" text-anchor="middle">1</text>
+  <text class="font heading" x="151" y="261">环境感知</text>
+  <text class="font body" x="101" y="321">地点：池塘边</text>
+  <text class="font body" x="101" y="359">闻到：玩家留下的气味</text>
+  <text class="font body" x="101" y="397">看到：玩家正在靠近</text>
+
+  <rect x="70" y="504" width="430" height="230" rx="25" fill="#e5ead6" stroke="#b9c6a0" stroke-width="2"/>
+  <circle cx="112" cy="548" r="23" fill="#829262"/>
+  <text class="font badge" x="112" y="556" text-anchor="middle">2</text>
+  <text class="font heading" x="151" y="558">状态与记忆</text>
+  <text class="font body" x="101" y="618">现在：正在池塘边休息</text>
+  <text class="font body" x="101" y="656">过去：曾与玩家友好相遇</text>
+  <text class="font small" x="101" y="701">每只狗可以有不同的经历</text>
+
+  <path class="line" d="M500 322 C565 322 570 410 624 410"/>
+  <path class="line" d="M500 619 C565 619 570 516 624 516"/>
+
+  <rect x="630" y="317" width="440" height="318" rx="29" fill="#e7e2f0" stroke="#b7aeca" stroke-width="2.4"/>
+  <circle cx="675" cy="364" r="24" fill="#8779a9"/>
+  <text class="font badge" x="675" y="372" text-anchor="middle">3</text>
+  <text class="font heading" x="717" y="375">AI 选择行为</text>
+  <text class="font body" x="671" y="438">结合感知、状态与过去经历</text>
+  <text class="font body" x="671" y="479">从有限动作中选择：</text>
+  <text class="font body" x="671" y="522">观察 · 靠近 · 保持距离 · 离开</text>
+  <rect x="670" y="556" width="356" height="49" rx="15" fill="#f8f5fd"/>
+  <text class="font body" x="690" y="589">本次示例：停下观察</text>
+
+  <path class="line" d="M1070 416 C1116 416 1121 322 1164 322"/>
+
+  <rect x="1170" y="207" width="440" height="230" rx="25" fill="#f3e4bc" stroke="#d5bf80" stroke-width="2"/>
+  <circle cx="1213" cy="251" r="23" fill="#be9851"/>
+  <text class="font badge" x="1213" y="259" text-anchor="middle">4</text>
+  <text class="font heading" x="1253" y="261">游戏执行</text>
+  <text class="font body" x="1201" y="321">狗停步、转头看向玩家</text>
+  <text class="font body" x="1201" y="359">位置和动作随之改变</text>
+  <text class="font small" x="1201" y="401">游戏规则负责实际移动与呈现</text>
+
+  <path class="line" d="M1390 437 V497"/>
+
+  <rect x="1170" y="504" width="440" height="230" rx="25" fill="#dce8ec" stroke="#a6bdc5" stroke-width="2"/>
+  <circle cx="1213" cy="548" r="23" fill="#668d9b"/>
+  <text class="font badge" x="1213" y="556" text-anchor="middle">5</text>
+  <text class="font heading" x="1253" y="558">更新关系记忆</text>
+  <text class="font body" x="1201" y="618">记录玩家如何回应它</text>
+  <text class="font body" x="1201" y="656">影响下次相遇时的选择</text>
+  <text class="font small" x="1201" y="701">关系从多次相遇中逐渐形成</text>
+
+  <path class="line" d="M1389 734 V777 H285 V741"/>
+  <rect x="657" y="752" width="370" height="44" rx="22" fill="#f8f6ee"/>
+  <text class="font small" x="842" y="782" text-anchor="middle">下次相遇，带着新的记忆再判断</text>
+
+  <line x1="72" y1="827" x2="1608" y2="827" stroke="#d4d8cc" stroke-width="2"/>
+  <text class="font small" x="74" y="863">概念流程草图：这是计划中的交互逻辑，具体行为规则与技术实现仍需原型测试。</text>
+</svg>
