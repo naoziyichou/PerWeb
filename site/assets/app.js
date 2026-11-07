@@ -25,9 +25,8 @@
       items: [
         { path: 'work', icon: '🗂', label: '作品集总览' },
         { path: 'work/a', icon: '🦽', label: '项目 A ·《风轮之旅》' },
-        { path: 'work/b', icon: '🧠', label: '项目 B · 本地动作生成' },
-        { path: 'work/c', icon: '📜', label: '项目 C ·《刺桐旧梦》' },
-        { path: 'work/d', icon: '🧰', label: '项目 D · AI 工具观察' }
+        { path: 'work/b', icon: '🐾', label: '项目 B · Following the Scent' },
+        { path: 'work/c', icon: '📜', label: '项目 C ·《刺桐旧梦》' }
       ]
     },
     {
