@@ -287,7 +287,7 @@
         <div class="row"><div class="k">类型</div><div class="v">叙事探索 · 侧视横向场景 · 观察、对话与线索核对</div></div>
         <div class="row"><div class="k">我的工作</div><div class="v">故事与人物关系 · 跨年代线索结构 · 地方空间转译 · 美术方向与 AI 辅助试稿 · NPC 交互方案</div></div>
         <div class="row"><div class="k">场景方向</div><div class="v">二维分层剪影背景；人物表现方式仍在比较</div></div>
-        <div class="row"><div class="k">阶段</div><div class="v">叙事与视觉开发、Unity 分层街景试搭；保留旧版 Godot 对话样片</div></div>
+        <div class="row"><div class="k">阶段</div><div class="v">叙事与视觉开发、Unity 分层街景试搭</div></div>
         <div class="row"><div class="k">设定依据</div><div class="v">2026-11-07 校订大纲：2003 → 1982 → 1940 → 2003</div></div>
       </div>
 
@@ -376,14 +376,9 @@
         [
           ['故事与线索', '已校订三年代大纲、人物关系、布袋传递与案件证据链', '把观察、核对与章节转换落实为可玩的短流程'],
           ['视觉与资源', '场景概念试稿；九层街景资源与 Unity 昼夜光色试验场景', '确定人物媒介，验证实际尺度、视差、光照与交互'],
-          ['旧版样片', 'Godot 对话与场景切换的历史实现及截图', '按新版叙事与横向场景重新整合并验证'],
           ['AI NPC', '蔡师傅对话结构、信息边界与待测用例', '先验证离线台词，再评估模型接入']
         ]
       )}
-      <figure>
-        <img src="site/assets/img/citong-dialogue.png" alt="刺桐旧梦旧版Godot样片的对话界面" loading="lazy">
-        <figcaption>历史样片截图 · Godot 对话界面，保留为制作过程记录。它与本页新版剧情、横向场景试稿分属不同阶段。</figcaption>
-      </figure>
       <p>当前最需要验证的是：<strong>玩家能否通过一个街段、一次调查和一段对话，理解自己为何要继续寻找。</strong>新版尚未形成经过完整试玩验证的可玩切片。</p>
     `
   };
