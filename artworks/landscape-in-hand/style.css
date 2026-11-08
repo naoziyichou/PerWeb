@@ -1,4 +1,4 @@
-:root { color-scheme: dark; --ink:#d8e4df; --muted:#849591; --line:#b8d9c726; --accent:#c7dcbc; --glass:#0b141cbd; --camera-opacity:.55; }
+:root { color-scheme: dark; --ink:#d8e4df; --muted:#849591; --line:#b8d9c726; --accent:#c7dcbc; --glass:#0b141cbd; --camera-opacity:.20; }
 * { box-sizing:border-box; }
 html,body { margin:0; width:100%; height:100%; overflow:hidden; background:#070e15; color:var(--ink); font-family:"Microsoft YaHei UI","PingFang SC",sans-serif; }
 body { background:radial-gradient(ellipse at 51% 45%,#142530 0%,#0a151e 48%,#070e15 85%); }
