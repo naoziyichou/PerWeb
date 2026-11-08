@@ -32,7 +32,7 @@
       </section>
 
       <h2 id="overview">这里有什么</h2>
-      <p>这里记录轮椅机甲的移动体验、狗狗捉迷藏的线索设计、跨越三个年代的泉州归乡故事，以及 Living Studio 中可以在线塑形的粒子山水。每件作品都呈现<strong>设计问题、关键取舍与当前成果</strong>。</p>
+      <p>这里记录狗狗捉迷藏的线索设计，以及 Living Studio 中可以在线塑形的粒子山水。每件作品都呈现<strong>设计问题、关键取舍与当前成果</strong>。</p>
 
       <div class="grid">
         <a class="card" href="#/work/landscape">
@@ -42,28 +42,14 @@
           <p class="d">把手伸进一片粒子山水：捏合抓住地形，上拉造山、下移成谷，松手后让河流寻找新的方向。</p>
           <div class="foot">p5.js × MediaPipe · 打开即可体验 →</div>
         </a>
-        <a class="card" href="#/work/a">
-          <img class="card-cover" src="site/assets/img/wind-city-entry.webp" alt="风轮之旅实机：轮椅与灰烬城邦入口" width="1600" height="900" loading="lazy">
-          <div class="k">项目 A · 个人探索</div>
-          <div class="t">《风轮之旅》</div>
-          <p class="d">让选择道路成为冒险：驾驶轮椅在灰烬城邦中移动、滑翔、沿墙探索。UE 5.8 原型与 84 秒展示片。</p>
-          <div class="foot">移动与场景原型 · 实机视频 →</div>
-        </a>
-        <a class="card" href="#/work/b">
+  <a class="card" href="#/work/b">
           <img class="card-cover" src="site/assets/img/following-the-scent-greybox.png" alt="Following the Scent实机：狗狗捉迷藏灰盒" width="1600" height="900" loading="lazy">
           <div class="k">项目 B · 当前在做</div>
           <div class="t">《Following the Scent》狗狗捉迷藏</div>
           <p class="d">通过短暂的方向嗅闻寻找会转移的 AI 狗。围绕线索、遮挡与追逐，逐步验证游戏机制。</p>
           <div class="foot">M0 灰盒 · 设计迭代与模型对照实验 →</div>
         </a>
-        <a class="card" href="#/work/c">
-          <img class="card-cover" src="site/assets/img/citong-2003-arcade.webp" alt="刺桐旧梦概念试稿：横向分层骑楼街景" width="1600" height="900" loading="lazy">
-          <div class="k">项目 C · 叙事设计</div>
-          <div class="t">《刺桐旧梦》</div>
-          <p class="d">一位槟城养女沿着泉州街巷、三个年代和一只布香火袋，找回家族记忆。</p>
-          <div class="foot">叙事与视觉开发 · Unity 街景试搭 →</div>
-        </a>
-      </div>
+  </div>
 
       <h2 id="now">当前状态</h2>
       <div class="meta">
@@ -108,7 +94,7 @@
       <p class="lead">动画与互动媒体专业，关注游戏机制、叙事结构与 AI 辅助创作。我用原型检验想法，也通过迭代与对照实验决定工具的使用方式。</p>
 
       <h2 id="who">我是谁</h2>
-      <p>我是陈阳，动画与互动媒体专业。目前正在制作狗狗捉迷藏《Following the Scent》，也在探索《风轮之旅》的轮椅移动体验，以及《刺桐旧梦》的泉州归乡叙事与横向场景。</p>
+      <p>我是陈阳，动画与互动媒体专业。目前正在制作狗狗捉迷藏《Following the Scent》，并在 Living Studio 中探索《掌中山水》的手势互动与创意编程。</p>
       <p>我擅长<strong>叙事架构</strong>和<strong>世界观构建</strong>，高考语文是我最好的科目。我不追求华丽文采，更在意结构、逻辑和互动节奏。我对互动叙事、具身智能、沉浸式体验和 AI 产品方向都有兴趣，不想把自己局限在"游戏"这一个标签里。</p>
       <p>这个网站记录我的探索、项目和思考。如果你也在做类似的事，欢迎交流。</p>
 
@@ -245,15 +231,7 @@
 
       <h2 id="projects">项目</h2>
 
-      <h3>《风轮之旅》Wheel of the Wind · 轮椅机甲动作冒险（个人探索）</h3>
-      <ul>
-        <li>工作：世界观与人物改编 · 移动机制和空间设计 · AI 辅助制作流程 · 原型整合</li>
-        <li>工具：UE 5.8 蓝图 · Blender · AI 生图生模（即梦 / Tripo）· PolyHaven 资产 · AI Agent 辅助实现</li>
-        <li>成果：轮椅移动与城邦场景原型，包含墙面移动、滑翔、雪橇的实机画面；已有 84 秒剪辑展示片</li>
-        <li>详情：<a href="#/work/a">项目 A 案例页</a></li>
-      </ul>
-
-      <h3>《Following the Scent》狗狗捉迷藏（进行中）</h3>
+<h3>《Following the Scent》狗狗捉迷藏（进行中）</h3>
       <ul>
         <li>工作：玩法与嗅闻信息边界设计 · 制作范围与迭代取舍 · AI 工具对照实验；AI Agent 辅助开发</li>
         <li>工具：Godot 4.7 · GDScript；Ollama / Llama 3.2 3B 用于独立实验</li>
@@ -262,16 +240,7 @@
         <li>详情：<a href="#/work/b">项目 B 案例页</a></li>
       </ul>
 
-      <h3>《刺桐旧梦》· 泉州归乡叙事（开发中）</h3>
-      <ul>
-        <li>工作：三年代叙事与人物关系 · 布香火袋传递及证据链 · 地方空间设计 · AI 辅助视觉试稿</li>
-        <li>方向：侧视横向探索、二维分层剪影背景；人物表现方式仍待比较</li>
-        <li>成果：已校订故事大纲，形成骑楼年代对照、药厂调查与崇武救助场景试稿，并制作九层街景资源与 Unity 昼夜光色试验场景</li>
-        <li>阶段：叙事与视觉开发、Unity 分层街景试搭；新版剧情集成、可玩切片与 AI NPC 接入待验证</li>
-        <li>详情：<a href="#/work/c">项目 C 案例页</a></li>
-      </ul>
-
-      <h2 id="skills">技能</h2>
+<h2 id="skills">技能</h2>
       <div class="table-wrap">
         <table>
           <thead><tr><th>方向</th><th>状态</th><th>说明</th></tr></thead>
@@ -313,8 +282,6 @@
       <ul>
         <li>《Following the Scent》：为什么嗅闻只给方向，不画出路径</li>
         <li>用 AI Agent 直接改引擎工程：哪些能交给它，哪些不能</li>
-        <li>《刺桐旧梦》：如何用同一只布袋连接三个年代</li>
-        <li>《风轮之旅》：角色装配与形态切换中的两次取舍</li>
         <li>30 次藏身点选择实验：模型输出格式正确，为什么仍保留规则 AI</li>
         <li>申请港理工 IME 的过程记录</li>
       </ul>

@@ -3,7 +3,7 @@
    - 左侧：结构总览（可折叠目录）
    - 中间：正文
    - 右侧：当前页面小目录 + 滚动高亮
-   路由：hash（#/work/a），file:// 直接双击打开也能用
+   路由：hash（#/work/b），file:// 直接双击打开也能用
    ========================================================================== */
 (function () {
   'use strict';
@@ -24,9 +24,7 @@
       title: '作品集',
       items: [
         { path: 'work', icon: '🗂', label: '作品集总览' },
-        { path: 'work/a', icon: '🦽', label: '项目 A ·《风轮之旅》' },
-        { path: 'work/b', icon: '🐾', label: '项目 B · Following the Scent' },
-        { path: 'work/c', icon: '📜', label: '项目 C ·《刺桐旧梦》' }
+        { path: 'work/b', icon: '🐾', label: '项目 B · Following the Scent' }
       ]
     },
     {
@@ -180,7 +178,7 @@
     var page = CONTENT[path];
 
     // 支持 #/work/b/b-install-env 这种"页面 + 小节"的地址
-    if (!page && path.indexOf('/') > 0) {
+    if (!page && path.indexOf('/') > 0 && !/^work\/[ac](\/|$)/.test(path)) {
       var cut = path.lastIndexOf('/');
       var maybePage = path.slice(0, cut);
       var maybeAnchor = path.slice(cut + 1);
@@ -189,6 +187,17 @@
         anchor = maybeAnchor;
         page = CONTENT[maybePage];
       }
+    }
+
+    if (!page && /^work\/[ac](\/|$)/.test(path)) {
+      page = {
+        id: path,
+        nav: '作品暂未公开',
+        title: '作品暂未公开',
+        crumb: [{ text: '作品集', href: '#/work' }],
+        html: '<h1>作品暂未公开</h1><p class="lead">这件作品目前暂未公开。</p>' +
+              '<p><a href="#/work">查看当前作品 →</a></p>'
+      };
     }
 
     if (!page) {
@@ -289,7 +298,7 @@
       if (!a) return;
       var href = a.getAttribute('href') || '';
 
-      // 站内页内锚点：#/work/a/a-bugs
+      // 站内页内锚点：#/work/b/b-design
       var m = href.match(/^#\/([^#]*?)\/([a-z0-9-]+)$/i);
       if (m && CONTENT[m[1]] && document.getElementById(m[2])) {
         e.preventDefault();
