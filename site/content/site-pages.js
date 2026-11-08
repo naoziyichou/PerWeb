@@ -32,9 +32,16 @@
       </section>
 
       <h2 id="overview">这里有什么</h2>
-      <p>这里记录三个互动项目：轮椅机甲的移动体验、狗狗捉迷藏的线索设计，以及跨越三个年代的泉州归乡故事。每个项目都呈现<strong>设计问题、关键取舍与当前成果</strong>。</p>
+      <p>这里记录轮椅机甲的移动体验、狗狗捉迷藏的线索设计、跨越三个年代的泉州归乡故事，以及 Living Studio 中可以在线塑形的粒子山水。每件作品都呈现<strong>设计问题、关键取舍与当前成果</strong>。</p>
 
       <div class="grid">
+        <a class="card" href="#/work/landscape">
+          <img class="card-cover" src="site/assets/img/landscape-in-hand.webp" alt="掌中山水：可以用手势塑造的粒子山峰与湖泊" width="1200" height="833" loading="lazy">
+          <div class="k">Living Studio · NetArt 02 · 在线互动</div>
+          <div class="t">《掌中山水》Landscape in Hand</div>
+          <p class="d">把手伸进一片粒子山水：捏合抓住地形，上拉造山、下移成谷，松手后让河流寻找新的方向。</p>
+          <div class="foot">p5.js × MediaPipe · 打开即可体验 →</div>
+        </a>
         <a class="card" href="#/work/a">
           <img class="card-cover" src="site/assets/img/wind-city-entry.webp" alt="风轮之旅实机：轮椅与灰烬城邦入口" width="1600" height="900" loading="lazy">
           <div class="k">项目 A · 个人探索</div>

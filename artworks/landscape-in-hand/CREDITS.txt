@@ -1,0 +1,5 @@
+Landscape in Hand / NetArt 02
+Based on Autumn cry.
+p5.js 2.3.4: LGPL-2.1; see vendor/p5-LICENSE.txt
+MediaPipe Tasks Vision 1.2.2 and Hand Landmarker: Google MediaPipe; see vendor/mediapipe/LICENSE
+https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker

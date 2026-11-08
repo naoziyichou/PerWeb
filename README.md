@@ -10,12 +10,15 @@ site/assets/        样式、脚本、图片
 site/content/       全部文案与页面内容（改这里）
 CNAME               GitHub Pages 自定义域名
 .nojekyll           关闭 Jekyll 处理
+artworks/           自带依赖与模型的互动作品
 ```
 
 ## 日常修改
 
 - 改文案/项目内容：编辑 `site/content/site-pages.js`、`site/content/projects.js`
 - 换图片：放进 `site/assets/img/`，在内容里引用 `site/assets/img/文件名`
+- 《掌中山水》页面：`site/content/living-studio.js`；互动作品：`artworks/landscape-in-hand/`
+- NetArt 02 作品页：`https://naoziyichou.xin/#/work/landscape`。页面内嵌互动作品并允许摄像头；全屏或新窗口也可体验。
 - 提交推送后等 1~2 分钟，`https://naoziyichou.xin` 自动更新
 
 ## 本地预览

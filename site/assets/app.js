@@ -30,6 +30,12 @@
       ]
     },
     {
+      title: 'Living Studio',
+      items: [
+        { path: 'work/landscape', icon: '⛰', label: '掌中山水 · NetArt 02' }
+      ]
+    },
+    {
       title: '关于',
       items: [
         { path: 'about', icon: '🌱', label: '关于我' },
@@ -200,6 +206,12 @@
     currentPath = path;
 
     // 正文
+    // Release the embedded artwork's camera before removing its page.
+    Array.prototype.forEach.call(elView.querySelectorAll('iframe[data-artwork]'), function (frame) {
+      try {
+        if (frame.contentWindow.handInput) frame.contentWindow.handInput.stop();
+      } catch (e) { /* A frame still loading has no active camera to stop here. */ }
+    });
     elView.className = '';
     elView.innerHTML = page.html;
     void elView.offsetWidth;          // 重启动画
@@ -310,6 +322,20 @@
   /* ------------------------------------------------------------------ 启动 */
   function boot() {
     interceptLinks();
+    document.addEventListener('click', function (event) {
+      var button = event.target.closest ? event.target.closest('[data-artwork-fullscreen]') : null;
+      if (!button) return;
+      var stage = document.getElementById(button.getAttribute('data-artwork-fullscreen'));
+      if (!stage) return;
+      var frame = stage.querySelector('iframe');
+      if (stage.requestFullscreen) {
+        stage.requestFullscreen().then(function () { if (frame) frame.focus(); }).catch(function () {
+          if (frame) window.open(frame.src, '_blank', 'noopener');
+        });
+      } else if (frame) {
+        window.open(frame.src, '_blank', 'noopener');
+      }
+    });
 
     window.addEventListener('hashchange', render);
     window.addEventListener('scroll', updateSpy, { passive: true });

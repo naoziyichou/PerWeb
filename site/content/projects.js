@@ -15,13 +15,21 @@
     html: `
       <div class="page-eyebrow">WORK</div>
       <h1>作品集</h1>
-      <p class="lead">围绕<strong>移动体验、游戏机制与互动叙事</strong>的三个项目。每个案例展示设计问题、关键取舍和当前成果。</p>
+      <p class="lead">围绕<strong>移动体验、游戏机制、互动叙事与创意编程</strong>展开。先体验一片可以用手塑形的山水，再看各个项目的设计问题、关键取舍和当前成果。</p>
 
       <div class="note">
         <b>开发中的作品：</b>每个项目标明当前可体验的内容与下一步计划，图片注明是实机截图还是概念示意。
       </div>
 
-      <h2 id="list">三个项目</h2>
+      <h2 id="list">项目与互动作品</h2>
+
+      <a class="card" href="#/work/landscape" style="margin-bottom:14px">
+        <img class="card-cover" src="site/assets/img/landscape-in-hand.webp" alt="掌中山水在线作品：粒子等高线、山峰与湖泊" width="1200" height="833" loading="lazy">
+        <div class="k">Living Studio · NetArt 02 · p5.js / MediaPipe</div>
+        <div class="t">《掌中山水》Landscape in Hand — 用手塑造一片山水</div>
+        <p class="d">从摄像头亮度驱动的山水发展为手势塑形。镜像背景显示自己的脸和手，捏合抓取、上下造山与成谷，水面和河流随地形改变。</p>
+        <div class="foot">内嵌互动作品 · 支持摄像头手势与鼠标体验 →</div>
+      </a>
 
       <a class="card" href="#/work/a" style="margin-bottom:14px">
         <img class="card-cover" src="site/assets/img/wind-city-entry.webp" alt="风轮之旅实机：轮椅与灰烬城邦入口" width="1600" height="900" loading="lazy">
@@ -53,7 +61,8 @@
         [
           ['A · 风轮之旅', '动作冒险 / 移动体验', 'UE 5.8 · Blender · AI 辅助制作', '地形如何与轮椅移动方式形成选择', '移动与场景原型 · 84 秒展示片'],
           ['B · Following the Scent', '捉迷藏 / 机制设计', 'Godot · GDScript · Ollama 对照实验', '方向线索如何保留寻找的判断空间', '一对一 M0 灰盒 + 30 次模型实验'],
-          ['C · 刺桐旧梦', '归乡叙事 / 地方探索', '叙事文档 · AI 辅助试稿 · 分层资源', '家族记忆如何通过地方与物件被发现', '叙事与视觉开发 · Unity 街景试搭']
+          ['C · 刺桐旧梦', '归乡叙事 / 地方探索', '叙事文档 · AI 辅助试稿 · 分层资源', '家族记忆如何通过地方与物件被发现', '叙事与视觉开发 · Unity 街景试搭'],
+          ['掌中山水', 'Net Art / 手势互动', 'p5.js · MediaPipe · AI 辅助开发', '手的动作如何直接改变粒子山水', '网页互动原型 · 摄像头与鼠标体验']
         ]
       )}
 
