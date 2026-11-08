@@ -2,6 +2,13 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
+  <script>
+  if (location.protocol === 'http:' && /^(www\.)?naoziyichou\.xin$/i.test(location.hostname)) {
+    const secureURL = new URL(location.href);
+    secureURL.protocol = 'https:';
+    location.replace(secureURL.href);
+  }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e15">
   <title>掌中山水 · Landscape in Hand</title>

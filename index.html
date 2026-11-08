@@ -2,6 +2,13 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<script>
+if (location.protocol === 'http:' && /^(www\.)?naoziyichou\.xin$/i.test(location.hostname)) {
+  const secureURL = new URL(location.href);
+  secureURL.protocol = 'https:';
+  location.replace(secureURL.href);
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>陈阳 · 探索记录</title>
 <meta name="description" content="陈阳的互动项目与设计记录：风轮之旅、Following the Scent、刺桐旧梦，以及可以在线用手势塑形的掌中山水 Living Studio 作品。">
